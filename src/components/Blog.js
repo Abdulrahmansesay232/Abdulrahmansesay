@@ -4,7 +4,7 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("https://dev.to/api/articles?username=coderamrin")
+    fetch("https://dev.to/api/articles?username=Abdulrahmansesay")
       .then((res) => res.json())
       .then((data) => setBlogs(data.slice(0, 2)))
       .catch((error) => console.log(error.message));
@@ -18,7 +18,7 @@ const Blog = () => {
             Blogs
           </h2>
 
-          <p className="pb-5">Some of my best blogs.</p>
+          <p className="pb-5">Some of my best blogs you can check on.</p>
         </div>
 
         <div></div>
